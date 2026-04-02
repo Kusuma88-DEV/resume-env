@@ -1,0 +1,32 @@
+name: resume-screening-env
+description: AI environment for resume screening and candidate selection
+
+version: 1.0
+
+author: Kusuma
+
+tasks:
+  - name: easy
+    description: Select candidate with Python skill
+
+  - name: medium
+    description: Select candidate with Python + ML + experience
+
+  - name: hard
+    description: Select best candidate for Senior ML Engineer
+
+actions:
+  type: object
+  properties:
+    selected_candidate:
+      type: string
+      description: Name of the selected candidate
+
+observations:
+  type: object
+  description: Contains resumes and job role
+
+rewards:
+  type: float
+  range: [0.0, 1.0]
+  description: Score based on correctness of selection
