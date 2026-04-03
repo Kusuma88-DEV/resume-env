@@ -1,0 +1,17 @@
+[project]
+name = "resume-env"
+version = "0.1.0"
+description = "Resume Selection OpenEnv Environment"
+authors = [
+    { name="Kusuma", email="kusuma200528@gmail.com" }
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openai",
+    "requests"
+]
+
+[tool.openenv]
+entry_point = "app:app"
