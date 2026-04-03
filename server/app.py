@@ -72,3 +72,7 @@ def baseline():
     return {
         "baseline_scores": scores
     }
+
+# ------------------ REQUIRED MAIN FUNCTION ------------------
+def main():
+    return app
